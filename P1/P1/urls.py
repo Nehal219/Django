@@ -30,5 +30,6 @@ urlpatterns = [
 
     #app level
     path('app1/',va1.met),
-    path('app2/',va2.met),
+    path('app2/',va2.met), 
+    path('app2img/',va2.met1), 
 ]
