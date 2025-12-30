@@ -17,10 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import *
+from a1 import views as va1
+from a2 import views as va2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    #project level
     path('',m1),
     path('nehal/',m1),
-    path('nehalimg/',m2)
+    path('nehalimg/',m2),
+
+    #app level
+    path('app1/',va1.met),
+    path('app2/',va2.met),
 ]
